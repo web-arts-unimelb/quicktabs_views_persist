@@ -1,0 +1,13 @@
+<?php
+/**
+ * @file
+ */
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function quicktabs_views_persist_views_pre_render(&$view) {
+  if ($view->plugin_name == 'quicktabs') {
+    drupal_add_js(drupal_get_path('module', 'quicktabs_views_persist') . '/quicktabs_views_persist.js');
+  }
+}

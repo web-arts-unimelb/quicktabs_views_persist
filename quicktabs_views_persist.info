@@ -1,0 +1,7 @@
+name = Quicktabs Views Persist
+description = Makes a selected quicktab persist when a link in a view is clicked.
+core = 7.x
+package = Views
+
+dependencies[] = quicktabs
+dependencies[] = views
